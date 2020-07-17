@@ -4,7 +4,13 @@ import "./style.css";
 const App = () => {
   return (
     <div>
-      <img src={"../public/images/glacier.png"} />
+      <div>
+        <img src={"/images/glacier.png"} />
+      </div>
+
+      <div>
+        <img src={"/images/stockholm.jpg"} />
+      </div>
     </div>
   );
 };
