@@ -15,6 +15,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.jsx/,
+        use: [
+          {
+            loader: path.resolve(__dirname, "./loader.js"),
+          },
+        ],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
         exclude: /node_modules/,
